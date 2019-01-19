@@ -9,7 +9,7 @@ import {
 
 export function combineReducers<T, V extends Action = Action>(
   reducers: ActionReducerMap<T, V>,
-  initialState?: Partial<T>
+  initialState?: InitialState<T>
 ): ActionReducer<T, V>;
 export function combineReducers(
   reducers: any,

@@ -377,7 +377,7 @@ describe('ngRx Store', () => {
       reducerManager.addFeature({
         key: 'feature1',
         reducers: {},
-        reducerFactory: <any>combineReducers,
+        reducerFactory: combineReducers,
       });
 
       expect(reducerManagerDispatcherSpy).toHaveBeenCalledWith({
@@ -391,12 +391,12 @@ describe('ngRx Store', () => {
         {
           key: 'feature1',
           reducers: {},
-          reducerFactory: <any>combineReducers,
+          reducerFactory: combineReducers,
         },
         {
           key: 'feature2',
           reducers: {},
-          reducerFactory: <any>combineReducers,
+          reducerFactory: combineReducers,
         },
       ]);
 
